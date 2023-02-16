@@ -31,7 +31,7 @@ export async function loginByPassword(username, password) {
 
   try {
     const res = await axios.post(
-      `https://api-user.huami.com/registrations/+86${username}/tokens`,
+      `https://api-user.huami.com/registrations/${username}/tokens`,
       data
     );
     log.info("登录成功, 开始获取登录授权码");
